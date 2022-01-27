@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>github-birza</title>
+    <style>
+    body{background: darkgray;}
+
+        .esas{position: relative;width: 100%;height: auto;border: 2px solid rgb(39, 39, 39);padding: 5px;margin: 5px 0 0 5px; font-size: 1.2em;}
+        input{width: 80px;}
+        tr ,th{border: 1px solid;}</style>
+</head>
+<body>
+    <div class="esas">
+        <table>
+            <tr>
+                <th>N</th>
+                <th>BUY</th>
+                <td rowspan="5" width="20px" ></td>
+                <td><select name="select" id="select">
+                    <option value="ADA-USDT">ADA-USDT</option>
+                    <option value="LUNA-USDT">LUNA-USDT</option>
+                    <option value="KDA-USDT">KDA-USDT</option>
+                    <option value="CLH-USDT">CLH-USDT</option>
+                    <option value="SLP-USDT">SLP-USDT</option>
+                </select></td>
+               
+                
+                <th>N</th>
+                <th>SELL</th>
+            </tr>
+            <tr>
+                <th>01</th>
+                <th><input type="number" id="buynumber01"></th>
+                <td>choose coin<input type="text" id="number13"style="display: none;"></td>
+                <th>01</th>
+                <th><input type="number" id="sellnumber01"></th>
+            </tr>
+            <tr>
+                <th>02</th>
+                <th><input type="number" id="buynumber02"></th>
+                <td rowspan="2" width="20px" ></td>
+                <th>02</th>
+                <th><input type="number" id="sellnumber02"></th>
+            </tr>
+            <tr>
+                <th>03</th>
+                <th> <button id="buynumber03" onclick="on01()">buy 100% <span id="click01">0</span></button></th>
+                <th>03</th>
+                
+                <th>  <button id="sellnumber03" onclick="on04()">sell 100% <span id="click04">0</span></button></th>
+            </tr>
+            <tr>
+                <th>04</th>
+                <th><button id="buynumber04" onclick="on02()" style="background: rgb(109, 213, 68);">buy <span id="click02">0</span></button></th>
+                <td></td><th>04</th>
+                <th> <button id="sellnumber04" onclick="on05()" style="background: rgb(216, 47, 47);">sell <span id="click05">0</span></button></th>
+            </tr>
+        </table><br>
+        <table>
+            <tr>
+                <th>balance USDT</th>
+                <th>0.000000</th>
+                <td></td>
+                <th>balance ADA</th>
+                <th>0.0000000</th>
+            </tr>
+            <tr>
+                <th>allcancel order</th>
+                <th><button id="otmena01" onclick="on03()">allcancel <span id="click03">0</span></button></th>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
